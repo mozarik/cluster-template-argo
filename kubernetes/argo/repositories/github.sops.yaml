@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://kubernetesjsonschema.dev/v1.18.1-standalone-strict/secret-v1.json
+apiVersion: v1
+kind: Secret
+metadata:
+  name: github
+  namespace: argo-system
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  type: ENC[AES256_GCM,data:PNHa,iv:9YuF/cmKxOWjkd+ns+69+eCH99LyGJCEBXfrQoy1mNs=,tag:ZpjzPbTzMUKZvk9S7j9pug==,type:str]
+  url: ENC[AES256_GCM,data:k5FVYwYSesJCBeIwtkc1PlbxCkLt/hlA/nV7U6UjsxKAvS3D3U09cSxb/nGhFmI5u3ojLQ==,iv:LPUIWRLQ12v+l01NajLEHUiMjixamEhQKl40H5ct1L8=,tag:7xXECnb9rZeZRV0UlpwdMg==,type:str]
+sops:
+  kms: []
+  gcp_kms: []
+  azure_kv: []
+  hc_vault: []
+  age:
+    - recipient: age1qwj9jj75armxlhtv3mkh7h9fytldwu7ylkpy9ns807fxrr7e0fkq329d6e
+      enc: |
+        -----BEGIN AGE ENCRYPTED FILE-----
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSArZHhkRU55bkNlb2tpcUU3
+        YTB1OW8xdUN3ODZMV3RsWXA1dDg4dm0xMlFvCkZyME1XSDEzY2dZajFBM01NSzBS
+        a1RnWXI5WjkycmJoVVFaanVqTXY3YkkKLS0tIHJyWmdTOEN5eWN4YTY2QS9OTHdE
+        Y3didVpzS1doVjRMRFRYWEQ1NHhOT00K79ecqGICeJpNQ08XV/Ugf1QGnJPLTmRW
+        1iytBxhfhVuYtMEPszg6LNTWycnST8Wzkkc6RVjjFrGUVekMjkx/uA==
+        -----END AGE ENCRYPTED FILE-----
+  lastmodified: "2025-03-09T21:07:10Z"
+  mac: ENC[AES256_GCM,data:Jo8RM1P5cyMsYSXRjzLX8Qgx4cdJTOn+hq42O0UHok0M7wrMoFVMEZgNg8oU8e6K2n6Yfx4n7+k1bQ7CcPFfwfJ5xqvoDAa2qxQlzrVbdHmlcBAsTMCJ38QLqht334v+92SEr7FkBHc02HSS66m7whZz5q1ZNsnvx+oy9+2DBKc=,iv:cxYVRcoo9ClN9OMdXzBbhpRdWvUoYigjp9jLGiqpk2A=,tag:qL8cXOdaVyubKzqOT6lGKA==,type:str]
+  pgp: []
+  encrypted_regex: ^(data|stringData)$
+  mac_only_encrypted: true
+  version: 3.9.4

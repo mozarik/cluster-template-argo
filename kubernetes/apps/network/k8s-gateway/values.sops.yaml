@@ -1,0 +1,33 @@
+fullnameOverride: k8s-gateway
+domain: zeinfahrozi.my.id
+ttl: 1
+service:
+  type: LoadBalancer
+  port: 53
+  annotations:
+    io.cilium/lb-ipam-ips: 192.168.1.200
+  externalTrafficPolicy: Cluster
+watchedResources:
+  - Ingress
+  - Service
+sops:
+  kms: []
+  gcp_kms: []
+  azure_kv: []
+  hc_vault: []
+  age:
+    - recipient: age1qwj9jj75armxlhtv3mkh7h9fytldwu7ylkpy9ns807fxrr7e0fkq329d6e
+      enc: |
+        -----BEGIN AGE ENCRYPTED FILE-----
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBtcUxNMDlEeFdyaTBVRzJ6
+        N2Y2d3hWeFVUbXFxVm43YXExR1gxbTM4S1dzCnBpR1M2c0hKZUJ2a0Q0M0NFVHhX
+        MDFGSG5WNmdJSEdnN21xckM3Ny9vRVUKLS0tIDR5eHQyVU5iYmJidXpsajNzeUZt
+        anMvNU9MemRPWEVjU2tZOFpCdTFHQWsK5fBJM6fpyClWWZZsdRgWpAAbHxqZRNob
+        4WuuBnTky7ePwkQOYKRdk5QpjomIL5F+ds7ywonRjO2Qe6IcXoYZ5g==
+        -----END AGE ENCRYPTED FILE-----
+  lastmodified: "2025-03-09T21:07:11Z"
+  mac: ENC[AES256_GCM,data:i5dvdtMKMZksV7sVnisbFe29+RlDBgxou7Hzx6XRd1EgaR/BG0bhykh27SGq0WJiKZZJVWjFndyivk8xV5NZZhg0vU6Z9C8WIUX5za7ho6TOyNn0OF6atgX2Z4C0uHaScqhgZW8CD3+7wFuG3PeVvDCjsEqwhcubqPOKL19+HoI=,iv:nBPDmOhOpjRpytluQRtbzHd1apHKP4aJqhPUEiXnJew=,tag:ZzXXGQv0UfMppx8R3EUW9Q==,type:str]
+  pgp: []
+  encrypted_regex: ^(data|stringData)$
+  mac_only_encrypted: true
+  version: 3.9.4

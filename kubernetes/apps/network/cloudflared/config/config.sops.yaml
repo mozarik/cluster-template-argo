@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cloudflared-configmap
+data:
+  config.yaml: ENC[AES256_GCM,data:BpwayyX3T0vjabklF+UTECy/jQ/45YKC1lJznjTBQcBFkFZyi7IAhefEVCkFVvmitmF59iIuJqrkwZbs7Y2SMk/8/f1n6noTqMpJl4gcWhprKXganga+kx4Gt12g/ndropRoinh4bjM9eRSZeM+E3ZkZBZE6mLod0mSw6mC/33/ugHgqgsobJvtdPMOb1ICDPTFrqkVffvCW6hzZUQH/zpq5gHifY/nS6hvObnzMDpAbJIbpZTi/xurVx3ll9dpaKs7vkqnqJMJnI7rBvIbIestXEBeazJ6y7bWZdC37qEuMVSRE/AMer1hoDDYn/mpLAYinAqHk+xj851V+R0NXSno3qrvFg+MUXzO8rXJPTSDg113HaXN8UDlsy7hMoQcJegvZskELqG1CGDBRODLhvSiVS1p6qqzjnkKJGtufSY0OzZirxC6DIi3W6xlPPgoxWhiNT3ZWPDBhAJodjFwWovNg7UQVoaoLhI5ahVZRcLqKRE207zGjMjH8GWlCMhxMHmNkmxsc2UqmsgFgKvUn44OOY3SUus9RFE+50Afd81gZNx8C0tVbLJS9Dvs4/BTDJQ==,iv:o/6vvoeaHvod2HtTQOVMzzSF3AWqDQ2Cq95L3wZBMOo=,tag:zYlliVHQ+Qw0qnRhqsDQlw==,type:str]
+sops:
+  kms: []
+  gcp_kms: []
+  azure_kv: []
+  hc_vault: []
+  age:
+    - recipient: age1qwj9jj75armxlhtv3mkh7h9fytldwu7ylkpy9ns807fxrr7e0fkq329d6e
+      enc: |
+        -----BEGIN AGE ENCRYPTED FILE-----
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAyMG5lQlpZalZTYmJ3STRL
+        SVFFL0toSzZzTDU4RWxPS2tkVEJWbzZSWjBRCm1XNEowRTd2LysxVHhraEoxRXdp
+        eEFWNGV2KzBITVh1bnYydC9aSGhKL28KLS0tIGI0bnRVbFYxMkNRQ3hSVmlMN2g3
+        UlFtelJhVWRLUnAzcG5rcS91bk9KamMKndoluKj0cw3505IVv+jw3UtkOokqo6P8
+        t43/3lTf9K2mZc3LxPYkV9GCgGUIGlRsZogr+Lk0EPsnmiDmpjroDg==
+        -----END AGE ENCRYPTED FILE-----
+  lastmodified: "2025-03-09T21:07:12Z"
+  mac: ENC[AES256_GCM,data:7kuln+ALmxknGIl4mOrH/yN5UDMvmGAu6ZqZtz0E7dWhcnSgC5MxHYfm17PljqWAQM7nEmbl68liCrsGEPBgt5fuiQm2ii2vkLsxdpBgrnjK1hFe6BZD9N4Uwc3YxoHJf0DFvKbzIwwObFsa83s4dUb416+5c8x1s4dJS2dTe20=,iv:nO+Nw3aoW+aKUWllu0/DmyTq0TnaalDWC9kbB6idaEo=,tag:KQC30suG99CItndE9phx9g==,type:str]
+  pgp: []
+  encrypted_regex: ^(data|stringData)$
+  mac_only_encrypted: true
+  version: 3.9.4

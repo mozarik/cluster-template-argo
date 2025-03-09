@@ -1,0 +1,31 @@
+apiVersion: externaldns.k8s.io/v1alpha1
+kind: DNSEndpoint
+metadata:
+  name: cloudflared
+spec:
+  endpoints:
+    - dnsName: external.zeinfahrozi.my.id
+      recordType: CNAME
+      targets:
+        - bcf0f2ce-368a-45b8-97e6-dab09c047f40.cfargotunnel.com
+sops:
+  kms: []
+  gcp_kms: []
+  azure_kv: []
+  hc_vault: []
+  age:
+    - recipient: age1qwj9jj75armxlhtv3mkh7h9fytldwu7ylkpy9ns807fxrr7e0fkq329d6e
+      enc: |
+        -----BEGIN AGE ENCRYPTED FILE-----
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBGT0Q0SUZXdkVwWEhSdTlk
+        OFRuaFdWRlc3TjZ3YUEzQ21iV3l0Yyswc21rCmxCSjh2d09TbXUrS3QrQ0NmcHhX
+        Y2FVUWNadUZ2L2Y2M3JwOS9ncHFzY3MKLS0tIFErUm14dkxjYWl5d2ZiT0VQSXhh
+        ay9CaVRIRkhRYmg5N0k0WFd0T20zeE0KQPjb67k0t4INgZZSU6IDT+uND1IupyhA
+        CmHroCc8KLwbQahfNWm8nL2a8igcNZZKQ4rZ1xpKo4cN01cDO79aYg==
+        -----END AGE ENCRYPTED FILE-----
+  lastmodified: "2025-03-09T21:07:11Z"
+  mac: ENC[AES256_GCM,data:vHWmAOD2mFg5AGBksPCcc7FBFt3M5enD3LQBaDZHe28f9T+YRLNjwRhtUBiZaV6hWmv8bOlpB7NamoJkIrxaxu3Abk4wKoR1ltTTefo677mdAJXylkBqx6cBpSk2SkvUFQR22ZJeUYpxwTYvPpG14wzXik5pdFCrlrinRCOuM9w=,iv:bYewEPxDriKuWaWPWPiJ/YsYZDHMe6LwpS5BXYC/zb8=,tag:8kWlds30RAfD9CTpCsJOow==,type:str]
+  pgp: []
+  encrypted_regex: ^(data|stringData)$
+  mac_only_encrypted: true
+  version: 3.9.4
