@@ -19,9 +19,9 @@ configs:
   secret:
     argocdServerAdminPassword: "123123"
     argocdServerAdminPasswordMtime: 2025-03-10T04:07:09
-    githubSecret: 54266ed4c6c31d0505c2a9dad617d29d
+    githubSecret: 54266ed4c6c31d0505c2a9dad617d29
 controller:
-  replicas: 2
+  replicas: 1
   metrics:
     enabled: true
     applicationLabels:
@@ -31,7 +31,7 @@ controller:
       additionalLabels:
         release: kube-prometheus-stack
 dex:
-  replicas: 2
+  replicas: 1
   metrics:
     enabled: true
     serviceMonitor:
@@ -46,7 +46,7 @@ redis:
       additionalLabels:
         release: kube-prometheus-stack
 server:
-  replicas: 2
+  replicas: 1
   allowAnyNamespace: true
   ingress:
     enabled: true
@@ -61,7 +61,7 @@ server:
       additionalLabels:
         release: kube-prometheus-stack
 notifications:
-  replicas: 2
+  replicas: 1
   metrics:
     enabled: true
     serviceMonitor:
@@ -69,7 +69,7 @@ notifications:
       additionalLabels:
         release: kube-prometheus-stack
 repoServer:
-  replicas: 2
+  replicas: 1
   serviceAccount:
     create: true
     name: argocd-repo-server
